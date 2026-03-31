@@ -1,6 +1,6 @@
-﻿using System.Media;
-
-namespace Bot;
+﻿using System;
+using System.IO;
+using System.Media;
 
 public static class AudioGreeting
 {
@@ -15,15 +15,12 @@ public static class AudioGreeting
             }
             else
             {
-                ConsoleUI.Printinfo("Greeting file not found");
+                ConsoleUIMethods.PrintError("Greeting file not found");
             }
-
         }
         catch
         {
-            ConsoleUI.PrintInfo("Audio playback error");
+            ConsoleUIMethods.PrintError("Audio playback error");
         }
-
     }
-}
-
+}x
