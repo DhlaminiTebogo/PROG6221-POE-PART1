@@ -10,7 +10,7 @@ public class BotResponses
         string lower = input.ToLower().Trim();
 
         if (lower.Contains("how are you"))
-            return "I'm fully operational and scanning for threats! Thanks for asking. 😄";
+            return "I'm fully operational and scanning for threats! Thanks for asking.";
 
         else if (lower.Contains("help") || lower.Contains("what can i ask"))
             return "You can ask me about:\n  1) Password safety\n  2) Phishing\n  3) Safe browsing";
